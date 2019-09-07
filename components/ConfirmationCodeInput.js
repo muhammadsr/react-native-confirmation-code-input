@@ -294,10 +294,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'row',
+    backgroundColor: 'red',
     marginTop: 20
   },
   codeInput: {
-    backgroundColor: 'transparent',
+    writingDirection: 'ltr',
+    backgroundColor: 'red',
     textAlign: 'center',
     padding: 0
   }
