@@ -21,6 +21,7 @@ declare module "react-native-confirmation-code-input" {
         containerStyle?: any;
         onFulfill: Function;
         onCodeChange: (code: string) => void;
+        forceLTR: boolean;
     }
 
     export default class CodeInput extends React.Component<CodeInputProps, any> { }

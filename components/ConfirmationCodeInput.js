@@ -23,6 +23,7 @@ export default class ConfirmationCodeInput extends Component {
     containerStyle: viewPropTypes.style,
     onFulfill: PropTypes.func,
     onCodeChange: PropTypes.func,
+    forceLTR: PropTypes.boolean,
   };
 
   static defaultProps = {
@@ -284,7 +285,7 @@ export default class ConfirmationCodeInput extends Component {
 
     return (
         <View style={[styles.container, this._getContainerStyle(size, inputPosition), containerStyle, {
-      flexDirection: I18nManager.isRTL ? 'row-reverse' : 'row'
+      flexDirection: this.props.forceLTR && I18nManager.isRTL ? 'row-reverse' : 'row'
     }]}>
     {codeInputs}
   </View>
