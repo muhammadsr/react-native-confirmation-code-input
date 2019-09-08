@@ -23,7 +23,7 @@ export default class ConfirmationCodeInput extends Component {
     containerStyle: viewPropTypes.style,
     onFulfill: PropTypes.func,
     onCodeChange: PropTypes.func,
-    forceLTR: PropTypes.boolean,
+    forceLTR: PropTypes.bool,
   };
 
   static defaultProps = {
